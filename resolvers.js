@@ -1,6 +1,6 @@
 // Provide resolver functions for your schema fields
-const resolvers = {
+export default  {
     Query: {
-        hello: (parents, args, context, info) => 'Hello world!',
+        holaMundo: (parents, args, context, info) => 'Hello world!',
     },
 };

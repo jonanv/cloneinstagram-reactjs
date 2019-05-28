@@ -1,6 +1,6 @@
 // Construct a schema, using GraphQL schema language
-const typeDefs = gql`
+export default `
   type Query {
-    hello: String
+    holaMundo: String
   }
 `;
