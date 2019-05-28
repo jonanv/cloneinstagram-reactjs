@@ -27,8 +27,9 @@ mongoose.Promise = global.Promise;
 
 import typeDefs from './schemas';
 import resolvers from './resolvers';
+import models from "./models";
 
-const schema = new ApolloServer({ typeDefs, resolvers });
+const schema = new ApolloServer({ typeDefs, resolvers, models });
 
 const PORT = 3000;
 const app = express();
