@@ -22,6 +22,8 @@ app.listen(PORT, () =>
 
 import express from 'express';
 import { ApolloServer, gql } from 'apollo-server-express';
+import mongoose from 'mongoose';
+mongoose.Promise = global.Promise;
 
 import typeDefs from './schemas';
 import resolvers from './resolvers';
