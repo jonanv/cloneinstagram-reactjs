@@ -1,5 +1,5 @@
 import User from './users';
-//import Post from './post.js';
+//import Post from './posts';
 
 const models = {
     User,
