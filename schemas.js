@@ -1,4 +1,5 @@
 // Construct a schema, using GraphQL schema language
+// ! Significa que no puede ir null
 export default `
     type User {
         _id: ID!

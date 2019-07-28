@@ -35,11 +35,10 @@ const PORT = 3000;
 const app = express();
 schema.applyMiddleware({ app });
 
-mongoose.connect('mongodb://localhost:27017/cloneinstagram-reactjs', {useNewUrlParser: true}).then(
-    () => {
+mongoose.connect('mongodb://localhost:27017/cloneinstagram-reactjs', { useNewUrlParser: true })
+    .then(() => {
         console.log('Conectado a MongoDB.');
         app.listen(PORT, () =>
             console.log(`🚀 Server ready at http://localhost:${PORT}${schema.graphqlPath}`)
         );
-    }
-)
+    });

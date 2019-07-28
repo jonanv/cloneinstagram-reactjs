@@ -4,6 +4,6 @@ export default {
         holaMundo: (parents, args, context, info) => 'Hello world!',
     },
     Mutation: {
-        createUser: (parents, args, {models}) => models.User.create(args),
+        createUser: (parents, args, { models }) => models.User.create(args)
     }
 };

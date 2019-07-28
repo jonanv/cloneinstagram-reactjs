@@ -1,9 +1,7 @@
 import User from './users';
 //import Post from './posts';
 
-const models = {
+export default {
     User,
-    //Post:
+    // Post,
 }
-
-export default models;
