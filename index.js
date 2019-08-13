@@ -41,4 +41,7 @@ mongoose.connect('mongodb://localhost:27017/cloneinstagram-reactjs', { useNewUrl
         app.listen(PORT, () =>
             console.log(`🚀 Server ready at http://localhost:${PORT}${schema.graphqlPath}`)
         );
+    })
+    .catch((error) => {
+        console.log('No se ha podico conectar a MongoDB:', error);
     });
